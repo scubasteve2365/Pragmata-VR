@@ -12,8 +12,10 @@ fix pack.
 
 **Download:** see [Releases](../../releases). Each release is a zip you extract into the game folder.
 
-> **v0.9.x is a pre-release.** It has been played through the opening and the tutorial on a Meta Quest 3
-> and a Pimax Dream Air. Later parts of the game have not been tested yet, so expect rough edges, and
+**Support:** Pragmata VR is free. If you enjoy it, you can [buy me a coffee](https://buymeacoffee.com/scubasteve2365).
+
+> **v0.9.x is a pre-release.** It has been played through the opening, the tutorial and the hub on a Meta
+> Quest 3 and a Pimax Dream Air. Later parts of the game have not been tested yet, so expect rough edges, and
 > please [report anything you find](#reporting-a-problem).
 
 <p align="center">
@@ -149,12 +151,11 @@ volumetric fog and the game's own anti-aliasing.
 
 ## Known issues (v0.9.x)
 
-- Only the opening and the tutorial areas have been played so far.
+- Only the opening, the tutorial and the hub have been played so far. HUD screens that appear later in the
+  game may need fixes.
 - Tested in windowed mode only; full screen is not supported.
-- **Item pickups** (the notice when you collect cubes) shows only briefly, so its default size and position
-  may need tuning on your headset.
-- **Objective** (the banner with your current objective, at the top on a monitor) has a starting size and
-  position that have not been tuned in a headset yet.
+- The default HUD layout is tuned on a Meta Quest 3. On other headsets, tune each element once in the mod
+  menu, then lock it.
 
 ## Troubleshooting
 
