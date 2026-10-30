@@ -96,7 +96,6 @@ circle, weapon wheel and tutorial box**. Every section has the same controls:
 | Size | Grows or shrinks the element. The game always draws it at full size and the headset scales it, so nothing is ever cut off. |
 | Left / right, Up / down | Moves the element on the HUD panel. |
 | Eye gap | Hacking circle only: how far apart the two eyes see it. The other elements take their depth from the HUD distance. |
-| INV | Flips which way Left / Right changes that value. |
 | Reset to defaults | Puts the element back to its starting values. |
 
 <p align="center">
