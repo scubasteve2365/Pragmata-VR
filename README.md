@@ -79,6 +79,14 @@ The menu stays fixed in the room where you opened it. It has four tabs:
   <img src="docs/images/hud-customization.jpg" alt="How HUD element customization works" width="90%">
 </p>
 
+<p align="center">
+  <img src="docs/images/one-hud-does-not-fit-all.jpg" alt="Every headset sees a different slice of the game, so each HUD element is tuned on its own" width="90%">
+</p>
+
+Every headset, field of view setting and render resolution shows a different slice of the game, and
+Pragmata has a lot of HUD that comes and goes. One fixed layout cannot suit them all, so each HUD element
+is tuned on its own, and every headset keeps its own settings.
+
 Each HUD element has its own section on the HUD tab: **health, stamina, item pickups, objective, hacking
 circle, weapon wheel and tutorial box**. Every section has the same controls:
 
@@ -90,6 +98,10 @@ circle, weapon wheel and tutorial box**. Every section has the same controls:
 | Eye gap | Hacking circle only: how far apart the two eyes see it. The other elements take their depth from the HUD distance. |
 | INV | Flips which way Left / Right changes that value. |
 | Reset to defaults | Puts the element back to its starting values. |
+
+<p align="center">
+  <img src="docs/images/full-size-then-scaled.jpg" alt="The game draws each HUD element at full size and the headset scales it, so nothing is cut off" width="90%">
+</p>
 
 **HUD modes:**
 
