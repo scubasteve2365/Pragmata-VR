@@ -1,0 +1,45 @@
+Pragmata VR: third-party notices
+================================
+
+Pragmata VR's dinput8.dll is built from a fork of REFramework (PureDark's fork of praydog's REFramework),
+branch pragmatavr: https://github.com/scubasteve2365/REFramework/tree/pragmatavr
+The release zip contains these third-party components. Full licence texts are in the release's
+licenses folder or at the links below.
+
+Shipped as separate files
+-------------------------
+PDAFWPlugin.dll        PureDark                       MIT licence           licenses/PDAFWPlugin_LICENSE.txt
+                       https://github.com/PureDark/REFramework (RE9 AFW v1.0-beta.6 release, unmodified)
+openxr_loader.dll      The Khronos Group Inc.         Apache License 2.0    licenses/OpenXR-SDK_LICENSE.txt, licenses/Apache-2.0.txt
+                       https://github.com/KhronosGroup/OpenXR-SDK (unmodified)
+
+Built into dinput8.dll
+----------------------
+REFramework            praydog and contributors       MIT licence           licenses/REFramework_LICENSE.txt
+                       https://github.com/praydog/REFramework
+REFramework fork       PureDark                       MIT licence           https://github.com/PureDark/REFramework
+Barlow Semi Condensed  The Barlow Project Authors     SIL Open Font 1.1     licenses/Barlow_OFL.txt
+(menu font)            https://github.com/jpt/barlow
+Dear ImGui             Omar Cornut                    MIT licence           https://github.com/ocornut/imgui
+ImGuizmo               Cedric Guillemet               MIT licence           https://github.com/CedricGuillemet/ImGuizmo
+imnodes                Johann Muszynski               MIT licence           https://github.com/Nelarius/imnodes
+GLM                    G-Truc Creation                MIT licence           https://github.com/g-truc/glm
+spdlog                 Gabi Melman                    MIT licence           https://github.com/gabime/spdlog
+Lua                    Lua.org, PUC-Rio               MIT licence           https://www.lua.org
+sol2                   ThePhD                         MIT licence           https://github.com/ThePhD/sol2
+JSON for Modern C++    Niels Lohmann                  MIT licence           https://github.com/nlohmann/json
+MinHook                Tsuda Kageyu                   BSD 2-Clause          https://github.com/TsudaKageyu/minhook
+safetyhook             cursey                         Boost Software 1.0    https://github.com/cursey/safetyhook
+kananlib               cursey                         MIT licence           https://github.com/cursey/kananlib
+asmjit                 The AsmJit Authors             Zlib licence          https://github.com/asmjit/asmjit
+bddisasm               Bitdefender                    Apache License 2.0    https://github.com/bitdefender/bddisasm
+DirectXTK, DirectXTK12 Microsoft Corporation          MIT licence           https://github.com/microsoft/DirectXTK12
+FreeType               The FreeType Project           FreeType License      https://freetype.org
+OpenVR SDK headers     Valve Corporation              BSD 3-Clause          https://github.com/ValveSoftware/openvr
+OpenXR SDK headers     The Khronos Group Inc.         Apache License 2.0    https://github.com/KhronosGroup/OpenXR-SDK
+
+Fixes from the community Pragmata VR fix pack (HUD target brackets, ghost layers, location label, door hack and
+hacking gauge effects) were re-implemented in C++ in this mod, with thanks to its authors.
+
+PRAGMATA is a trademark of CAPCOM CO., LTD. Pragmata VR is an unofficial fan modification and is not affiliated
+with or endorsed by Capcom.

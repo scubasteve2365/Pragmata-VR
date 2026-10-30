@@ -1,0 +1,5 @@
+*.bat text eol=crlf
+dist/*.txt text eol=crlf
+dist/licenses/*.txt text eol=crlf
+*.jpg binary
+*.png binary
