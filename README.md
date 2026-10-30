@@ -78,8 +78,8 @@ The menu stays fixed in the room where you opened it. It has four tabs:
   <img src="docs/images/hud-customization.jpg" alt="How HUD element customization works" width="90%">
 </p>
 
-Each HUD element has its own section on the HUD tab: **health, stamina, item pickups, hacking circle,
-weapon wheel and tutorial box**. Every section has the same controls:
+Each HUD element has its own section on the HUD tab: **health, stamina, item pickups, objective, hacking
+circle, weapon wheel and tutorial box**. Every section has the same controls:
 
 | Control | What it does |
 |---|---|
@@ -92,12 +92,15 @@ weapon wheel and tutorial box**. Every section has the same controls:
 
 **HUD modes:**
 
-- **Fixed:** health, stamina, item pickups, weapon wheel and tutorial box sit on a panel fixed in the room
+- **Fixed:** health, stamina, item pickups, objective, weapon wheel and tutorial box sit on a panel fixed in the room
   in front of you. Look at them when you want them, look past them when you don't. Recenter moves the panel
   to where you are looking.
 - **Follows Head:** the same elements stay in your view as you look around, like a helmet display.
 
 The hacking circle, door hacks, the aiming reticle and enemy markers stay in the world in both modes.
+Enemy health bars and damage numbers are placed over the enemy automatically on any headset; the **Enemy
+health bars** and **Damage numbers** sections move each of them relative to the enemy (Lock, Left / right,
+Up / down, Reset).
 
 ### Render modes
 
@@ -129,6 +132,8 @@ volumetric fog and the game's own anti-aliasing.
 - Tested in windowed mode only; full screen is not supported.
 - **Item pickups** (the notice when you collect cubes) shows only briefly, so its default size and position
   may need tuning on your headset.
+- **Objective** (the banner with your current objective, at the top on a monitor) has a starting size and
+  position that have not been tuned in a headset yet.
 
 ## Troubleshooting
 
