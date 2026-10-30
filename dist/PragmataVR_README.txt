@@ -11,7 +11,9 @@ INSTALL
    Steam: right-click PRAGMATA, Manage, Browse local files.
 2. Only if you used the community Pragmata VR fix pack or HUD Controls before: run PragmataVR_install.bat once.
    It moves their scripts aside (nothing is deleted).
-3. Start your VR runtime (SteamVR, or Virtual Desktop with VDXR for Meta Quest), then launch PRAGMATA from Steam.
+3. In the game's graphics options set the display mode to Windowed (any resolution; 1920 x 1080 is fine,
+   the mod renders at your headset's resolution). Full screen is not supported.
+4. Start your VR runtime (SteamVR, or Virtual Desktop with VDXR for Meta Quest), then launch PRAGMATA from Steam.
 
 UPDATE: extract the new zip over the old one. Settings are kept.
 UNINSTALL: run PragmataVR_uninstall.bat. Your settings in reframework\data are kept.
@@ -33,7 +35,7 @@ Try AFW render mode (General tab) if Native cannot hold your headset's refresh r
 
 KNOWN ISSUES
 - Only the opening and the tutorial have been played so far.
-- Meta Quest 3: enemy health bars and damage numbers can sit a little above and beside the enemy.
+- Tested in windowed mode only. Do not change resolution or display mode while in VR.
 - Item pickups (the notice when you collect cubes) shows briefly; its size and place may need tuning.
 
 PROBLEMS

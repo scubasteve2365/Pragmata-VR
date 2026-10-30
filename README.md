@@ -38,7 +38,10 @@ fix pack.
 3. Only if you used the **community Pragmata VR fix pack** or **HUD Controls** before: run
    `PragmataVR_install.bat` in the game folder once. It moves their scripts out of the way (into
    `reframework\autorun\pragmatavr_disabled`), because they fight Pragmata VR's own HUD. Nothing is deleted.
-4. Start your VR runtime, then launch PRAGMATA from Steam as usual.
+4. In the game's graphics options, set the display mode to **Windowed** (not full screen). Any resolution
+   works: the mod renders at your headset's resolution whatever the game is set to, so a small window such as
+   1920 x 1080 is a good choice. Pragmata VR has only been tested in windowed mode.
+5. Start your VR runtime, then launch PRAGMATA from Steam as usual.
 
 The first launch creates your settings in `reframework\data`. They start from values tuned on a Quest 3;
 each headset gets its own settings file, so tuning one headset never changes another.
@@ -115,14 +118,15 @@ Pragmata is heavy in VR. Some suggestions:
 - Set the render resolution in your VR runtime (SteamVR per-app setting, Virtual Desktop, Pimax Play).
   Leave REFramework's own resolution scale at 1.0.
 
+Do not change the resolution or display mode in the game's menu while playing in VR.
+
 Pragmata VR already turns off effects that are bad in VR: motion blur, lens distortion, lens flares,
 volumetric fog and the game's own anti-aliasing.
 
 ## Known issues (v0.9.x)
 
 - Only the opening and the tutorial areas have been played so far.
-- **Meta Quest 3:** enemy health bars and damage numbers can sit a little above and to the side of the enemy.
-  A proper fix is in progress.
+- Tested in windowed mode only; full screen is not supported.
 - **Item pickups** (the notice when you collect cubes) shows only briefly, so its default size and position
   may need tuning on your headset.
 
@@ -131,6 +135,9 @@ volumetric fog and the game's own anti-aliasing.
 **The game only shows on the monitor.** Your VR runtime is not running, or it is not the active OpenXR
 runtime. In SteamVR: Settings, OpenXR, Set SteamVR as OpenXR runtime. In Virtual Desktop: use VDXR. Start the
 runtime before the game.
+
+**Black screen, or the image freezes after alt-tabbing.** Set the game's display mode to Windowed (graphics
+options) and restart the game.
 
 **The Fixed HUD panel is empty or in the wrong place.** Open the mod menu and choose Recenter on the General
 tab. If you changed REFramework's own settings, make sure its Ultrawide/FOV fix is on (Pragmata VR needs it).
