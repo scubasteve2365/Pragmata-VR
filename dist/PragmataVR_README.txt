@@ -26,8 +26,9 @@ Select, edit, done          A (Enter)
 Bigger steps when editing   Hold RB (Shift)
 Back / close                B (Backspace)
 
-Tabs: General (render mode, HUD mode, Recenter, Fixed HUD panel), HUD (every HUD element: Lock, Size,
-Left / right, Up / down, Eye gap, Reset), Advanced, Mod menu. Changes save instantly, per headset.
+Tabs: General (render mode, HUD mode, Recenter, HUD panel), HUD (every HUD element: Lock, Size,
+Left / right, Up / down, Reset), Advanced (low health edges, Native in menus), Mod menu. Changes save
+instantly, per headset.
 
 PERFORMANCE
 In the game's graphics options turn path tracing, ray tracing and frame generation off and pick a DLSS mode.

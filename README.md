@@ -67,9 +67,10 @@ The game does not see your gamepad while the mod menu is open, and every change 
 The menu stays fixed in the room where you opened it. It has four tabs:
 
 - **General:** render mode (Native or AFW), HUD mode (Fixed or Follows Head), Recenter, and the size,
-  distance and position of the Fixed HUD panel.
+  distance and position of the HUD panel (used by both HUD modes).
 - **HUD:** every HUD element in its own section (see below).
-- **Advanced:** sharpening, desktop mirror, the performance log, and developer tools.
+- **Advanced:** sharpening, desktop mirror, the performance log, the low health screen edges, Native in
+  menus, and developer tools.
 - **Mod menu:** where the menu sits, its text size, and the click volume.
 
 ### HUD customization
@@ -84,9 +85,9 @@ circle, weapon wheel and tutorial box**. Every section has the same controls:
 | Control | What it does |
 |---|---|
 | Lock | Locked elements cannot change by accident. Unlock to tune, lock again when you are happy. |
-| Size | Grows or shrinks the element around its own centre. |
-| Left / right, Up / down | Moves the element: on the HUD panel in Fixed mode, in your view in Follows Head mode. |
-| Eye gap | How far apart the two eyes see the element. Higher brings it closer to you (Follows Head mode; the Fixed panel takes its depth from the HUD distance). |
+| Size | Grows or shrinks the element. The game always draws it at full size and the headset scales it, so nothing is ever cut off. |
+| Left / right, Up / down | Moves the element on the HUD panel. |
+| Eye gap | Hacking circle only: how far apart the two eyes see it. The other elements take their depth from the HUD distance. |
 | INV | Flips which way Left / Right changes that value. |
 | Reset to defaults | Puts the element back to its starting values. |
 
@@ -95,12 +96,21 @@ circle, weapon wheel and tutorial box**. Every section has the same controls:
 - **Fixed:** health, stamina, item pickups, objective, weapon wheel and tutorial box sit on a panel fixed in the room
   in front of you. Look at them when you want them, look past them when you don't. Recenter moves the panel
   to where you are looking.
-- **Follows Head:** the same elements stay in your view as you look around, like a helmet display.
+- **Follows Head:** the same panel stays in your view as you look around, like a helmet display.
+
+Both modes use the same element layout, so tuning in one mode carries over to the other.
 
 The hacking circle, door hacks, the aiming reticle and enemy markers stay in the world in both modes.
 Enemy health bars and damage numbers are placed over the enemy automatically on any headset; the **Enemy
 health bars** and **Damage numbers** sections move each of them relative to the enemy (Lock, Left / right,
 Up / down, Reset).
+
+**Advanced settings worth knowing:**
+
+- **Low health edges** (hidden by default): the game's red effect at the screen edges when health is low. It
+  is made for a flat monitor and sits at the edge of your view in VR.
+- **Native in menus** (on by default): full-screen menus such as the Firmware Updater are drawn in Native
+  while open, because AFW leaves trails in them. The game goes back to AFW when the menu closes.
 
 ### Render modes
 
