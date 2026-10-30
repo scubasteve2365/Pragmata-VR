@@ -31,7 +31,9 @@ Left / right, Up / down, Reset), Advanced (low health edges, Native in menus), M
 instantly, per headset.
 
 PERFORMANCE
-In the game's graphics options turn path tracing, ray tracing and frame generation off and pick a DLSS mode.
+Recommended game settings: Windowed display mode, DLSS on Balanced or Quality, most graphics settings on Low.
+Turn off: path tracing, ray tracing, ray reconstruction, frame generation, dynamic resolution, V-Sync, depth of
+field, motion blur, lens distortion, lens flare (and chromatic aberration / film grain if offered).
 Try AFW render mode (General tab) if Native cannot hold your headset's refresh rate.
 
 KNOWN ISSUES

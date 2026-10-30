@@ -30,7 +30,7 @@ fix pack.
 | VR runtime | An OpenXR runtime set as the active one. Tested on SteamVR and on Virtual Desktop (VDXR). |
 | Headset | Any PC VR headset on that runtime. Tested with a Meta Quest 3 (Virtual Desktop, VDXR) and a Pimax Dream Air (SteamVR). **Meta Quest:** use Virtual Desktop with its VDXR runtime. |
 | Gamepad | Xbox, or others through Steam Input |
-| Graphics card | Tested on an NVIDIA RTX 5090. Pragmata is demanding in VR: see [Performance](#performance). |
+| Graphics card | Tested on an NVIDIA RTX 5090. Pragmata is demanding in VR: see [Recommended game settings](#recommended-game-settings). |
 
 ## Install
 
@@ -42,7 +42,8 @@ fix pack.
    `reframework\autorun\pragmatavr_disabled`), because they fight Pragmata VR's own HUD. Nothing is deleted.
 4. In the game's graphics options, set the display mode to **Windowed** (not full screen). Any resolution
    works: the mod renders at your headset's resolution whatever the game is set to, so a small window such as
-   1920 x 1080 is a good choice. Pragmata VR has only been tested in windowed mode.
+   1920 x 1080 is a good choice. Pragmata VR has only been tested in windowed mode. See
+   [Recommended game settings](#recommended-game-settings) for the rest.
 5. Start your VR runtime, then launch PRAGMATA from Steam as usual.
 
 The first launch creates your settings in `reframework\data`. They start from values tuned on a Quest 3;
@@ -134,20 +135,45 @@ Up / down, Reset).
 
 Switch between them on the General tab; it applies straight away.
 
-### Performance
+### Recommended game settings
 
-Pragmata is heavy in VR. Some suggestions:
+Pragmata is heavy in VR: the game renders a large image for each eye. Set these in the game's own options
+before you play.
 
-- In the game's graphics options, turn **path tracing, ray tracing and frame generation off**, and pick a
-  DLSS mode (Performance or Ultra Performance for Native).
-- Try **AFW** if Native cannot hold your headset's refresh rate.
-- Set the render resolution in your VR runtime (SteamVR per-app setting, Virtual Desktop, Pimax Play).
-  Leave REFramework's own resolution scale at 1.0.
+**Display**
 
-Do not change the resolution or display mode in the game's menu while playing in VR.
+- **Display mode: Windowed.** Pragmata VR is only tested in windowed mode; full screen can give a black
+  screen or a frozen image. Any window size works (1920 x 1080 is a good choice): the mod renders at your
+  headset's resolution whatever the game is set to.
+- Do not change the resolution or display mode while playing in VR.
 
-Pragmata VR already turns off effects that are bad in VR: motion blur, lens distortion, lens flares,
-volumetric fog and the game's own anti-aliasing.
+**Quality**
+
+- **Upscaling: DLSS on Balanced or Quality** (recommended).
+- **Most other graphics settings on Low** (shadows, textures, effects, global illumination, mesh quality).
+  Raise them one at a time if your GPU has room to spare.
+- Set the headset's render resolution in your VR runtime (SteamVR per-app setting, Virtual Desktop, Pimax
+  Play). Leave REFramework's own resolution scale at 1.0.
+- Try **AFW** (General tab of the mod menu) if Native cannot hold your headset's refresh rate.
+
+**Turn these off.** They cost a lot in VR, or they are camera effects made for a flat screen:
+
+| Setting | Why |
+|---|---|
+| Path Tracing | Far too heavy for two eye images |
+| Ray Tracing | Heavy |
+| DLSS Ray Reconstruction | Only needed with ray or path tracing |
+| Frame Generation | Not supported in VR |
+| Dynamic Resolution | Changes sharpness from frame to frame |
+| V-Sync | The VR runtime sets the pace |
+| Depth of Field | Blurs what you look at; your eyes do their own focusing in VR |
+| Motion Blur | Smears the image when you turn your head |
+| Lens Distortion | A camera lens effect, wrong in a headset |
+| Lens Flare | A camera lens effect |
+| Chromatic aberration and film grain | Camera effects, if your game version offers them |
+
+Pragmata VR already forces motion blur, lens distortion, lens flares and volumetric fog off, and sets the
+game's own anti-aliasing to TAA, so those stay off even if the menu shows them on.
 
 ## Known issues (v0.9.x)
 
@@ -171,7 +197,7 @@ tab. If you changed REFramework's own settings, make sure its Ultrawide/FOV fix 
 
 **HUD elements are doubled or flicker.** Old HUD scripts are still running. Run `PragmataVR_install.bat` once.
 
-**Low frame rate.** See [Performance](#performance).
+**Low frame rate.** See [Recommended game settings](#recommended-game-settings).
 
 **Windows or your antivirus removed or blocked a file.** Mods that hook into a game are sometimes flagged.
 Restore `dinput8.dll` from the zip and add an exception if you trust the download. Only download Pragmata VR
