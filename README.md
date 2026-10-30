@@ -180,6 +180,8 @@ game's own anti-aliasing to TAA, so those stay off even if the menu shows them o
 - Only the opening, the tutorial and the hub have been played so far. HUD screens that appear later in the
   game may need fixes.
 - Tested in windowed mode only; full screen is not supported.
+- The start-up splash screens can flicker for a few seconds before the title screen (they are drawn in
+  Native, which removed the double image they had in AFW).
 - The default HUD layout is tuned on a Meta Quest 3. On other headsets, tune each element once in the mod
   menu, then lock it.
 

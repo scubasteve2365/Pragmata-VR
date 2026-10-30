@@ -39,6 +39,7 @@ Try AFW render mode (General tab) if Native cannot hold your headset's refresh r
 KNOWN ISSUES
 - Only the opening, the tutorial and the hub have been played so far.
 - Tested in windowed mode only. Do not change resolution or display mode while in VR.
+- The start-up splash screens can flicker for a few seconds before the title screen.
 - The default HUD layout is tuned on a Meta Quest 3. On other headsets, tune each element once, then lock it.
 
 PROBLEMS
