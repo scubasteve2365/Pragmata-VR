@@ -3,7 +3,7 @@ Pragmata VR v0.9.0 (pre-release)
 PRAGMATA in VR, third person with a gamepad. Free, by scubasteve2365.
 Home page, updates and help: https://github.com/scubasteve2365/Pragmata-VR
 
-v0.9.x is a pre-release: played through the opening and the tutorial on a Meta Quest 3 (Virtual Desktop, VDXR)
+v0.9.x is a pre-release: played through the opening, tutorial and hub on a Meta Quest 3 (Virtual Desktop, VDXR)
 and a Pimax Dream Air (SteamVR). Later parts of the game are untested.
 
 INSTALL
@@ -35,9 +35,9 @@ In the game's graphics options turn path tracing, ray tracing and frame generati
 Try AFW render mode (General tab) if Native cannot hold your headset's refresh rate.
 
 KNOWN ISSUES
-- Only the opening and the tutorial have been played so far.
+- Only the opening, the tutorial and the hub have been played so far.
 - Tested in windowed mode only. Do not change resolution or display mode while in VR.
-- Item pickups (the notice when you collect cubes) shows briefly; its size and place may need tuning.
+- The default HUD layout is tuned on a Meta Quest 3. On other headsets, tune each element once, then lock it.
 
 PROBLEMS
 Run PragmataVR_collect_logs.bat (before restarting the game after a crash) and attach the zip it puts on your
