@@ -67,7 +67,7 @@ anything the install step moved, and keeps your settings in case you come back (
 | Back / close | B | Backspace |
 
 The game does not see your gamepad while the mod menu is open, and every change is saved straight away.
-The menu stays fixed in the room where you opened it. It has four tabs:
+The menu stays fixed in the room where you opened it. It has four tabs: 
 
 - **General:** render mode (Native or AFW), HUD mode (Fixed or Follows Head), Recenter, and the size,
   distance and position of the HUD panel (used by both HUD modes).
