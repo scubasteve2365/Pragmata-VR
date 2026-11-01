@@ -14,9 +14,9 @@ fix pack.
 
 **Support:** Pragmata VR is free. If you enjoy it, you can [buy me a coffee](https://buymeacoffee.com/scubasteve2365).
 
-> **v0.9.x is a pre-release.** It has been played through the opening, the tutorial and the hub on a Meta
-> Quest 3 and a Pimax Dream Air. Later parts of the game have not been tested yet, so expect rough edges, and
-> please [report anything you find](#reporting-a-problem).
+> **v0.9.x is a pre-release.** It has been tested on a Meta Quest 3 and a Pimax Dream Air through the first
+> part of the game. Later parts have not been tested yet, so expect rough edges, and please
+> [report anything you find](#reporting-a-problem).
 
 <p align="center">
   <img src="docs/images/hud-elements.jpg" alt="The HUD elements Pragmata VR lets you tune" width="90%">
@@ -59,21 +59,26 @@ anything the install step moved, and keeps your settings in case you come back (
 
 | Action | Gamepad | Keyboard |
 |---|---|---|
-| Open or close the mod menu | Click both thumbsticks together (L3 + R3) | F1 |
+| Open the mod menu | Hold both thumbsticks in (L3 + R3) for about half a second | F1 |
+| Close the mod menu | Click both thumbsticks (L3 + R3), or B | F1 |
 | Change menu tab | LT / RT | Page Up / Page Down |
 | Move in the menu | D-pad | Arrow keys |
 | Select, edit, done | A | Enter |
 | Bigger steps while editing | Hold RB | Hold Shift |
 | Back / close | B | Backspace |
 
-The game does not see your gamepad while the mod menu is open, and every change is saved straight away.
-The menu stays fixed in the room where you opened it. It has four tabs: 
+The mod menu opens on a hold because the game uses a quick L3 + R3 press for Overdrive: a quick press still
+triggers Overdrive, holding both sticks opens the menu instead. The game does not see your gamepad while the
+mod menu is open, and every change is saved straight away. The menu stays fixed in the room where you opened
+it. It has five tabs:
 
 - **General:** render mode (Native or AFW), HUD mode (Fixed or Follows Head), Recenter, and the size,
   distance and position of the HUD panel (used by both HUD modes).
 - **HUD:** every HUD element in its own section (see below).
 - **Advanced:** sharpening, desktop mirror, the performance log, the low health screen edges, Native in
   menus, and developer tools.
+- **Experimental:** features still being worked on (see [Experimental](#experimental)). They start switched
+  to the game's original behaviour.
 - **Mod menu:** where the menu sits, its text size, and the click volume.
 
 ### HUD customization
@@ -88,7 +93,8 @@ The menu stays fixed in the room where you opened it. It has four tabs:
 
 Every headset, field of view setting and render resolution shows a different slice of the game, and
 Pragmata has a lot of HUD that comes and goes. One fixed layout cannot suit them all, so each HUD element
-is tuned on its own, and every headset keeps its own settings.
+is tuned on its own, and every headset keeps its own settings. On a new install the element sections start
+folded up; select a section's title to open it.
 
 Each HUD element has its own section on the HUD tab: **health, stamina, item pickups, objective, hacking
 circle, weapon wheel and tutorial box**. Every section has the same controls:
@@ -97,7 +103,7 @@ circle, weapon wheel and tutorial box**. Every section has the same controls:
 |---|---|
 | Lock | Locked elements cannot change by accident. Unlock to tune, lock again when you are happy. |
 | Size | Grows or shrinks the element. The game always draws it at full size and the headset scales it, so nothing is ever cut off. |
-| Left / right, Up / down | Moves the element on the HUD panel. |
+| Left / right, Up / down | Moves the element on the HUD panel (5 per step, 50 while holding RB). |
 | Eye gap | Hacking circle only: how far apart the two eyes see it. The other elements take their depth from the HUD distance. |
 | Reset to defaults | Puts the element back to its starting values. |
 
@@ -125,6 +131,18 @@ Up / down, Reset).
   is made for a flat monitor and sits at the edge of your view in VR.
 - **Native in menus** (on by default): full-screen menus such as the Firmware Updater are drawn in Native
   while open, because AFW leaves trails in them. The game goes back to AFW when the menu closes.
+
+### Experimental
+
+These are works in progress. Each one starts on the game's original behaviour, so nothing changes until you
+switch it on.
+
+| Setting | What it does |
+|---|---|
+| Subtitles: New / Original | **New** puts the subtitles on their own panel, like the other HUD elements, so AFW no longer doubles them when the camera moves. Tune the panel in the Subtitles section below the switch. While the objective banner or a tutorial window is showing, the subtitles step aside and are drawn the game's way, so you may still see an occasional doubled line. |
+| Reticle: New / Original | **New** shows the gun reticle on its own layer on the game camera's aim, so AFW no longer doubles it and it follows the right stick, not your head (in Follows Head mode it stays in your view). Size, Left / right, Up / down and Distance (its depth) are in the Reticle section; nudge Left / right and Up / down until your shots land on it. |
+| Sharp textures (on) | Asks the game to keep its high resolution textures loaded in VR, where it otherwise drops some to low detail. Uses more VRAM. |
+| Reload textures | A test button: makes the game drop and reload its streamed textures, to compare detail before and after. The row shows RELOADING, then DONE. |
 
 ### Render modes
 
@@ -177,8 +195,10 @@ game's own anti-aliasing to TAA, so those stay off even if the menu shows them o
 
 ## Known issues (v0.9.x)
 
-- Only the opening, the tutorial and the hub have been played so far. HUD screens that appear later in the
-  game may need fixes.
+- Only the first part of the game has been played so far. HUD screens that appear later in the game may need
+  fixes.
+- Some textures can still look soft in VR compared with a flat screen. Sharp textures (Experimental tab)
+  helps with part of it; work continues.
 - Tested in windowed mode only; full screen is not supported.
 - The start-up splash screens can flicker for a few seconds before the title screen (they are drawn in
   Native, which removed the double image they had in AFW).

@@ -1,10 +1,10 @@
-Pragmata VR v0.9.0 (pre-release)
+Pragmata VR v0.9.2 (pre-release)
 ================================
 PRAGMATA in VR, third person with a gamepad. Free, by scubasteve2365.
 Home page, updates and help: https://github.com/scubasteve2365/Pragmata-VR
 
-v0.9.x is a pre-release: played through the opening, tutorial and hub on a Meta Quest 3 (Virtual Desktop, VDXR)
-and a Pimax Dream Air (SteamVR). Later parts of the game are untested.
+v0.9.x is a pre-release: tested on a Meta Quest 3 (Virtual Desktop, VDXR) and a Pimax Dream Air (SteamVR)
+through the first part of the game. Later parts are untested.
 
 INSTALL
 1. Extract everything in this zip into the PRAGMATA game folder (the one with PRAGMATA.exe).
@@ -19,7 +19,9 @@ UPDATE: extract the new zip over the old one. Settings are kept.
 UNINSTALL: run PragmataVR_uninstall.bat. Your settings in reframework\data are kept.
 
 IN GAME
-Open / close the mod menu   Both thumbsticks together (L3 + R3), or F1
+Open the mod menu           Hold both thumbsticks in (L3 + R3) for about half a second, or F1
+                            (a quick L3 + R3 press is the game's Overdrive)
+Close the mod menu          Click both thumbsticks, B, or F1
 Change tab                  LT / RT (Page Up / Page Down)
 Move                        D-pad (arrow keys)
 Select, edit, done          A (Enter)
@@ -27,8 +29,16 @@ Bigger steps when editing   Hold RB (Shift)
 Back / close                B (Backspace)
 
 Tabs: General (render mode, HUD mode, Recenter, HUD panel), HUD (every HUD element: Lock, Size,
-Left / right, Up / down, Reset), Advanced (low health edges, Native in menus), Mod menu. Changes save
+Left / right, Up / down, Reset), Advanced (low health edges, Native in menus), Experimental (works in
+progress: Subtitles and Reticle New / Original, Sharp textures, Reload textures), Mod menu. Changes save
 instantly, per headset.
+
+EXPERIMENTAL (start on the game's original behaviour)
+Subtitles New   Subtitles on their own panel, no AFW doubling. They step aside while the objective banner or
+                a tutorial window shows.
+Reticle New     Gun reticle on its own layer on the game camera's aim, no AFW doubling. Use Left / right and
+                Up / down in its section until your shots land on it; Distance sets its depth.
+Sharp textures  On by default: keeps high resolution textures loaded in VR (more VRAM).
 
 PERFORMANCE
 Recommended game settings: Windowed display mode, DLSS on Balanced or Quality, most graphics settings on Low.
@@ -37,7 +47,8 @@ field, motion blur, lens distortion, lens flare (and chromatic aberration / film
 Try AFW render mode (General tab) if Native cannot hold your headset's refresh rate.
 
 KNOWN ISSUES
-- Only the opening, the tutorial and the hub have been played so far.
+- Only the first part of the game has been played so far.
+- Some textures can still look soft in VR; Sharp textures helps with part of it.
 - Tested in windowed mode only. Do not change resolution or display mode while in VR.
 - The start-up splash screens can flicker for a few seconds before the title screen.
 - The default HUD layout is tuned on a Meta Quest 3. On other headsets, tune each element once, then lock it.
