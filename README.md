@@ -14,9 +14,8 @@ fix pack.
 
 **Support:** Pragmata VR is free. If you enjoy it, you can [buy me a coffee](https://buymeacoffee.com/scubasteve2365).
 
-> **v0.9.x is a pre-release.** It has been tested on a Meta Quest 3 and a Pimax Dream Air through the first
-> part of the game. Later parts have not been tested yet, so expect rough edges, and please
-> [report anything you find](#reporting-a-problem).
+> **Version 1.0.** Played on a Meta Quest 3 and a Pimax Dream Air well into the game. If you find a HUD screen
+> or a spot that does not look right, please [report it](#reporting-a-problem).
 
 <p align="center">
   <img src="docs/images/hud-elements.jpg" alt="The HUD elements Pragmata VR lets you tune" width="90%">
@@ -77,8 +76,7 @@ it. It has five tabs:
 - **HUD:** every HUD element in its own section (see below).
 - **Advanced:** sharpening, desktop mirror, the performance log, the low health screen edges, Native in
   menus, and developer tools.
-- **Experimental:** features still being worked on (see [Experimental](#experimental)). They start switched
-  to the game's original behaviour.
+- **Experimental:** newer features with their own on / off switches (see [Experimental](#experimental)).
 - **Mod menu:** where the menu sits, its text size, and the click volume.
 
 ### HUD customization
@@ -120,7 +118,9 @@ circle, weapon wheel and tutorial box**. Every section has the same controls:
 
 Both modes use the same element layout, so tuning in one mode carries over to the other.
 
-The hacking circle, door hacks, the aiming reticle and enemy markers stay in the world in both modes.
+The hacking circle, door hacks, the aiming reticle and enemy markers stay in the world in both modes. Button
+prompts, enemy health bars and damage numbers that would land on a HUD element's spot at the edge of your view are
+moved just clear of it, so they are never cut onto a HUD panel.
 Enemy health bars and damage numbers are placed over the enemy automatically on any headset; the **Enemy
 health bars** and **Damage numbers** sections move each of them relative to the enemy (Lock, Left / right,
 Up / down, Reset).
@@ -130,19 +130,21 @@ Up / down, Reset).
 - **Low health edges** (hidden by default): the game's red effect at the screen edges when health is low. It
   is made for a flat monitor and sits at the edge of your view in VR.
 - **Native in menus** (on by default): full-screen menus such as the Firmware Updater are drawn in Native
-  while open, because AFW leaves trails in them. The game goes back to AFW when the menu closes.
+  while open, because AFW leaves trails in them. The game goes back to AFW when the menu closes. The start-up
+  splash screens are always drawn in Native, whatever this is set to.
 
 ### Experimental
 
-These are works in progress. Each one starts on the game's original behaviour, so nothing changes until you
-switch it on.
+Newer features, each with its own switch. Press A on a row to change it.
 
 | Setting | What it does |
 |---|---|
-| Subtitles: New / Original | **New** puts the subtitles on their own panel, like the other HUD elements, so AFW no longer doubles them when the camera moves. Tune the panel in the Subtitles section below the switch. While the objective banner or a tutorial window is showing, the subtitles step aside and are drawn the game's way, so you may still see an occasional doubled line. |
-| Reticle: New / Original | **New** shows the gun reticle on its own layer on the game camera's aim, so AFW no longer doubles it and it follows the right stick, not your head (in Follows Head mode it stays in your view). Size, Left / right, Up / down and Distance (its depth) are in the Reticle section; nudge Left / right and Up / down until your shots land on it. |
+| Subtitles: New / Original | **New** (the default on a new install) puts the subtitles on their own panel, like the other HUD elements, so AFW no longer doubles them when the camera moves. Tune the panel in the Subtitles section below the switch. When the objective banner shows at the same time, the two share their spot and both stay on their panels. They step aside (drawn the game's way) only while a window or menu covers their spot. |
+| Reticle: Original / New / Depth-based | **Original** is the game's own reticle. **New** shows it on its own layer on the game camera's aim at a fixed Distance, so AFW no longer doubles it and it follows the right stick, not your head. **Depth-based** (AFW render mode only) places that layer at the depth of whatever you aim at, read from the game's depth buffer; Depth scale sets how much it shrinks with distance, and Distance is used when you aim at the sky. In Native, Depth-based is not offered and acts as Original (Native has no AFW doubling to fix). Size, Left / right, Up / down and Distance are in the Reticle section; nudge Left / right and Up / down until your shots land on it. |
 | Sharp textures (on) | Asks the game to keep its high resolution textures loaded in VR, where it otherwise drops some to low detail. Uses more VRAM. |
+| Max detail (off) | Highest detail models everywhere, every texture detail level, and a bigger texture memory target. Try it if textures still look soft. Costs GPU time and VRAM. |
 | Reload textures | A test button: makes the game drop and reload its streamed textures, to compare detail before and after. The row shows RELOADING, then DONE. |
+| World scale (1.00x) | Above 1.00 the world looks smaller (more depth, like a model); below 1.00 it looks bigger. It scales the distance between your eyes and your head movement; aiming is not affected. High values can show more AFW artifacts at object edges. |
 
 ### Render modes
 
@@ -193,15 +195,12 @@ before you play.
 Pragmata VR already forces motion blur, lens distortion, lens flares and volumetric fog off, and sets the
 game's own anti-aliasing to TAA, so those stay off even if the menu shows them on.
 
-## Known issues (v0.9.x)
+## Known issues (1.0)
 
-- Only the first part of the game has been played so far. HUD screens that appear later in the game may need
-  fixes.
-- Some textures can still look soft in VR compared with a flat screen. Sharp textures (Experimental tab)
-  helps with part of it; work continues.
+- Some textures can still look soft in VR compared with a flat screen in places. Sharp textures and Max detail
+  (Experimental tab) help; work continues.
+- A button prompt can now and then still catch the edge of a HUD element's spot.
 - Tested in windowed mode only; full screen is not supported.
-- The start-up splash screens can flicker for a few seconds before the title screen (they are drawn in
-  Native, which removed the double image they had in AFW).
 - The default HUD layout is tuned on a Meta Quest 3. On other headsets, tune each element once in the mod
   menu, then lock it.
 
@@ -254,6 +253,8 @@ holds the documentation, the release files and the releases.
 - **Alternate Frame Warping and the RE Engine VR work this builds on:** PureDark. Please support his work; this
   mod would not be playable without it.
 - **Community Pragmata VR fix pack:** its authors found many of the HUD fixes folded into this mod
+- **Depth-based reticle:** [hookmanuk](https://github.com/hookmanuk) (reticle depth from the game's depth buffer,
+  a port of uevrlib's reticule targeting)
 - **Menu font:** Barlow Semi Condensed, The Barlow Project Authors (SIL Open Font License)
 - Third-party code and licences: see [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt)
 
