@@ -169,9 +169,13 @@ before you play.
 
 **Quality**
 
-- **Upscaling: DLSS on Balanced or Quality** (recommended).
-- **Most other graphics settings on Low** (shadows, textures, effects, global illumination, mesh quality).
-  Raise them one at a time if your GPU has room to spare.
+- **Upscaling: DLSS on Quality** (recommended; Balanced if you need the frame rate). The game picks texture
+  detail for the resolution it renders at before upscaling, so a lower DLSS setting also means softer textures.
+- **Texture Quality: the highest option your VRAM allows, Texture Filtering: Anisotropic 16x, Mesh Quality: High
+  or higher.** These cost video memory more than GPU time, and lower settings give the game smaller textures and
+  lower detail models to choose from, which shows up as soft textures in VR.
+- **Most other graphics settings on Low** (shadows, effects, global illumination). Raise them one at a time if
+  your GPU has room to spare.
 - Set the headset's render resolution in your VR runtime (SteamVR per-app setting, Virtual Desktop, Pimax
   Play). Leave REFramework's own resolution scale at 1.0.
 - Try **AFW** (General tab of the mod menu) if Native cannot hold your headset's refresh rate.

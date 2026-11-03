@@ -44,7 +44,8 @@ Max detail      Off by default: highest detail models and textures everywhere (m
 World scale     1.00x by default. Above 1 the world looks smaller, below 1 bigger. Aiming is not affected.
 
 PERFORMANCE
-Recommended game settings: Windowed display mode, DLSS on Balanced or Quality, most graphics settings on Low.
+Recommended game settings: Windowed display mode, DLSS on Quality, Texture Quality as high as your VRAM allows,
+Texture Filtering Anisotropic 16x, Mesh Quality High or higher, most other graphics settings on Low.
 Turn off: path tracing, ray tracing, ray reconstruction, frame generation, dynamic resolution, V-Sync, depth of
 field, motion blur, lens distortion, lens flare (and chromatic aberration / film grain if offered).
 Try AFW render mode (General tab) if Native cannot hold your headset's refresh rate.
