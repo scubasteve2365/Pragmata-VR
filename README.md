@@ -14,7 +14,7 @@ fix pack.
 
 **Support:** Pragmata VR is free. If you enjoy it, you can [buy me a coffee](https://buymeacoffee.com/scubasteve2365).
 
-> **Version 1.0.** Played on a Meta Quest 3 and a Pimax Dream Air well into the game. If you find a HUD screen
+> **Version 1.1.** Played on a Meta Quest 3 and a Pimax Dream Air well into the game. If you find a HUD screen
 > or a spot that does not look right, please [report it](#reporting-a-problem).
 
 <p align="center">
@@ -71,11 +71,14 @@ triggers Overdrive, holding both sticks opens the menu instead. The game does no
 mod menu is open, and every change is saved straight away. The menu stays fixed in the room where you opened
 it. It has five tabs:
 
-- **General:** render mode (Native or AFW), HUD mode (Fixed or Follows Head), Recenter, and the size,
+- **General:** render mode (Native or AFW), HUD mode (Fixed or Follows Head), Picture, Recenter, and the size,
   distance and position of the HUD panel (used by both HUD modes).
+  **Picture** sets how the HUD and the mod menu reach your headset: Auto (default) picks Steady on Virtual
+  Desktop and Panel everywhere else. Steady draws them into the view like the game picture, Panel shows them
+  as their own layers. If the HUD stretches or shears when you turn your head, try the other one.
 - **HUD:** every HUD element in its own section (see below).
 - **Advanced:** sharpening, desktop mirror, the performance log, the low health screen edges, Native in
-  menus, and developer tools.
+  menus, Decoupled pitch, and developer tools.
 - **Experimental:** newer features with their own on / off switches (see [Experimental](#experimental)).
 - **Mod menu:** where the menu sits, its text size, and the click volume.
 
@@ -199,7 +202,7 @@ before you play.
 Pragmata VR already forces motion blur, lens distortion, lens flares and volumetric fog off, and sets the
 game's own anti-aliasing to TAA, so those stay off even if the menu shows them on.
 
-## Known issues (1.0)
+## Known issues (1.1)
 
 - Some textures can still look soft in VR compared with a flat screen in places. Sharp textures and Max detail
   (Experimental tab) help; work continues.

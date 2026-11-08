@@ -1,4 +1,4 @@
-Pragmata VR 1.0
+Pragmata VR 1.1
 ===============
 PRAGMATA in VR, third person with a gamepad. Free, by scubasteve2365.
 Home page, updates and help: https://github.com/scubasteve2365/Pragmata-VR
@@ -27,10 +27,14 @@ Select, edit, done          A (Enter)
 Bigger steps when editing   Hold RB (Shift)
 Back / close                B (Backspace)
 
-Tabs: General (render mode, HUD mode, Recenter, HUD panel), HUD (every HUD element: Lock, Size,
-Left / right, Up / down, Reset), Advanced (low health edges, Native in menus), Experimental (Subtitles,
+Tabs: General (render mode, HUD mode, Picture, Recenter, HUD panel), HUD (every HUD element: Lock, Size,
+Left / right, Up / down, Reset), Advanced (low health edges, Native in menus, Decoupled pitch), Experimental (Subtitles,
 Reticle, Sharp textures, Max detail, Reload textures, World scale), Mod menu. Changes save instantly,
 per headset.
+
+PICTURE (General tab): how the HUD and the mod menu reach your headset. Auto (default) picks Steady on
+Virtual Desktop and Panel everywhere else. Steady draws them into the view like the game picture; Panel shows
+them as their own layers. If the HUD stretches or shears when you turn your head, try the other one.
 
 EXPERIMENTAL (press A on a row to change it)
 Subtitles       New (default on a new install): subtitles on their own panel, no AFW doubling.
