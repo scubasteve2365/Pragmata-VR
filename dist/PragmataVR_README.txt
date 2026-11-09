@@ -1,9 +1,13 @@
-Pragmata VR 1.1
+Pragmata VR 1.2
 ===============
 PRAGMATA in VR, third person with a gamepad. Free, by scubasteve2365.
 Home page, updates and help: https://github.com/scubasteve2365/Pragmata-VR
 
-Played on a Meta Quest 3 (Virtual Desktop, VDXR) and a Pimax Dream Air (SteamVR) well into the game.
+Played through to the end of the game. Tested on a Meta Quest 3 (Virtual Desktop, VDXR) and a Pimax Dream Air (SteamVR).
+
+NEW IN 1.2
+Hacking menu: the effects the game draws over the hacking grid in the late game (cyan swirl, orange and
+pink smear, yellow brush stroke) are hidden, so the grid stays clear.
 
 INSTALL
 1. Extract everything in this zip into the PRAGMATA game folder (the one with PRAGMATA.exe).

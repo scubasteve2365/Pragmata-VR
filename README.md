@@ -14,8 +14,12 @@ fix pack.
 
 **Support:** Pragmata VR is free. If you enjoy it, you can [buy me a coffee](https://buymeacoffee.com/scubasteve2365).
 
-> **Version 1.1.** Played on a Meta Quest 3 and a Pimax Dream Air well into the game. If you find a HUD screen
-> or a spot that does not look right, please [report it](#reporting-a-problem).
+> **Version 1.2.** Played through to the end of the game, tested on a Meta Quest 3 and a Pimax Dream Air. If you
+> find a HUD screen or a spot that does not look right, please [report it](#reporting-a-problem).
+
+**New in 1.2:** the effects the game draws over the hacking grid in the late game (cyan swirl, orange and pink
+smear, yellow brush stroke) are hidden, so the grid stays clear. To update, extract the zip over your 1.1
+install; your settings are kept.
 
 <p align="center">
   <img src="docs/images/hud-elements.jpg" alt="The HUD elements Pragmata VR lets you tune" width="90%">
@@ -202,7 +206,7 @@ before you play.
 Pragmata VR already forces motion blur, lens distortion, lens flares and volumetric fog off, and sets the
 game's own anti-aliasing to TAA, so those stay off even if the menu shows them on.
 
-## Known issues (1.1)
+## Known issues (1.2)
 
 - Some textures can still look soft in VR compared with a flat screen in places. Sharp textures and Max detail
   (Experimental tab) help; work continues.
